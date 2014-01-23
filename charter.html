@@ -124,7 +124,9 @@
             href="http://www.w3.org/2012/webapps/charter/Overview.html">Web
             Applications Working Group Charter</a> to produce deliverables
           necessary for the evolving Web application market, and continue work
-          already in progress.</p>
+          already in progress. The group is expected to be rechartered when 
+	  the charter expires, or earlier if it takes on deliverables beyond 
+	  the scope of work identified in this charter.</p>
         <p>The scope of the Web Applications Working Group covers the
           technologies related to developing client-side applications on the
           Web, including both markup vocabularies for describing and controlling
@@ -182,10 +184,14 @@
             <dl>
               <dt><a href="http://www.w3.org/TR/IndexedDB/">Indexed Database API</a></dt>
               <dd>An API for a database of records holding simple values and
-                hierarchical objects</dd>
+                hierarchical objects.</dd>
               <dt><a href="https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html">Quota Management API</a></dt>
               <dd>An API for managing the amount of storage space (short- or
-                long-term) available </dd>
+                long-term) available.</dd>
+              <dt><a href="https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md">Service Workers</a></dt>
+              <dd>ServiceWorkers are a new feature for the web platform that lets a 
+		script persistently cache resources and handle all resource requests 
+		for an application -- even when the network isn't available.</dd>
             </dl>
           </dd>
           <dt id="dom">Document Object Model (DOM)</dt>
@@ -236,6 +242,8 @@
             (API only, excluding sections "Selectors" and "Rendering" of the
             document which will continue to be developed by the CSS WG either as
             separate specifications or as a joint deliverable)</dd>
+          <dt><a href="http://dvcs.w3.org/hg/gamepad/raw-file/tip/gamepad.html">Gamepad</a></dt>
+          <dd>Defines APIs that allow web applications to directly act on gamepad data.</dd>
           <dt><a href="http://dvcs.w3.org/hg/ime-api/raw-file/292fbe13bacc/Overview.html">Input
               Method (IME) API</a></dt>
           <dd>An API to determine the input method being used, to improve the
@@ -244,11 +252,10 @@
           <dt><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
           <dd>Defines a JSON-based manifest, which provides developers with a 
 	    centralized place to put metadata about a web application.</dd>
-          <dt><a href="http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html">Pointer
-              Lock</a> and <a rel="nofollow" title="http://dvcs.w3.org/hg/webevents/raw-file/tip/gamepad.html"
-              href="http://dvcs.w3.org/hg/gamepad/raw-file/tip/gamepad.html">Gamepad</a></dt>
-          <dd>APIs which allow interaction with controllers currently not
-            supported by web standards.</dd>
+          <dt><a href="http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html">Pointer Lock</a></dt>
+          <dd>Defines APIs that provide scripted access to raw mouse movement data 
+	    while locking the target of mouse events to a single element and removing 
+	    the cursor from view.</dd>
           <dt><a href="https://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html">Screen Orientation API</a></dt>
           <dd>A view orientation and locking API e.g. to enable reading the
             view's orientation state, locking view orientation, notification of
@@ -263,9 +270,6 @@
              </dl>
 	   </dd>
 
-          <dt><a href="https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md">Service Workers</a></dt>
-          <dd>ServiceWorkers are a new feature for the web platform that lets a script persistently cache resources and handle all resource requests for an application -- even when the network isn't available.
-            </dd>
           <dt><a href="http://dvcs.w3.org/hg/url/raw-file/default/Overview.html">URL API</a></dt>
           <dd>An API to work with the components of a URI in ECMAscript - host,
             scheme, port, etc. </dd>
@@ -323,8 +327,6 @@
         <p>The working group will maintain errata and new editions, as
           necessary, for the following Recommendation-status specifications:</p>
         <ul>
-          <li>
-             <a href="http://www.w3.org/TR/webstorage/">Web Storage</a></li>
           <li id="cors">
 	     <a href="http://www.w3.org/TR/cors/">CORS</a></li>
           <li id="dom-errata">Errata for DOM specifications, as required.</li>
@@ -334,6 +336,8 @@
 	     <a href="http://www.w3.org/TR/progress-events/">Progress Events</a></li>
           <li id="view-mode">
              <a href="http://www.w3.org/TR/view-mode/">view-mode Media Feature</a></li>
+          <li id="webstorage">
+             <a href="http://www.w3.org/TR/webstorage/">Web Storage</a></li>
           <li id="widgets-apis">
 	     <a href="http://www.w3.org/TR/widgets-apis/">Widget Interface</a></li>
           <li id="widgets-access">
@@ -343,7 +347,7 @@
         </ul>
 
         <h4>3.1.2 Abandoned work</h4>
-        <p>Some deliverables from the previous charter will no longer be worked
+        <p>Some deliverables from the previous charter will no longer be worked on
           as documented in the group's 
 	  <a href="http://www.w3.org/2008/webapps/wiki/PubStatus#Specs_NO_Longer_Active">non-active specs</a> wiki.</p>
         
@@ -422,7 +426,7 @@
           <dt><a href="http://www.w3.org/testing/browser/" id="browser-testing">Browser Testing and Tools
               Working Group</a></dt>
           <dd>This group's Web Driver specification is of interest to the 
-	    WebApps Working Group.</dd>
+	    WebApps WG.</dd>
           <dt><a href="http://www.w3.org/Style/Group/" id="css">Cascading Style
               Sheets Working Group</a></dt>
           <dd>To collaborate on the Fullscreen API specification.</dd>
@@ -450,7 +454,7 @@
           <dd>This group creates DOM extension specifications and is interested in
 	    WebApps' DOM Level 3 Events and UI Events specifications.</dd>
           <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
-          <dd>The WebApps Working Group will request review of specifications and
+          <dd>The WebApps WG will request review of specifications and
             communication as necessary with this group. </dd>
           <dt><a href="http://www.w3.org/WAI/PF/" id="pfwg">Protocols and
               Formats Working Group</a></dt>
@@ -467,6 +471,9 @@
 	      Working Group</a></dt>
           <dd>This group creates APIs is interested in several of WebApps' 
 	    specifications including the File APIs and ServiceWorkers.</dd>
+          <dt><a href="http://www.w3.org/2001/tag/">Technical Architecture Group</a></dt>
+          <dd>The WebApps WG will ask the Technical Architecture Group to
+            review some set of its specifications.</dd>
           <dt><a href="http://www.w3.org/WAI/UA/" id="uawg">User Agent
               Accessibility Guidelines Working Group</a></dt>
           <dd>To ensure that WebApps WG deliverables support accessibility
