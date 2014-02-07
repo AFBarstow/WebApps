@@ -258,6 +258,7 @@
           <dd>A view orientation and locking API e.g. to enable reading the
             view's orientation state, locking view orientation, notification of
             view orientation state changes, etc. </dd>
+
           <dt id="server-sent-events">Server Originated Events</dt>
 	   <dd>APIs to facilitate web applications receiving events from a server.
              <dl>
@@ -267,23 +268,37 @@
                <dd>An API for opening an HTTP connection for receiving push notifications from a server in the form of DOM events.</dd>
              </dl>
 	   </dd>
-
            <dt><a href="https://dvcs.w3.org/hg/streams-api/raw-file/tip/Overview.htm">Streams API</a></dt>
            <dd>An API for representing a stream of data in web applications.</dd>
-
           <dt><a href="http://dvcs.w3.org/hg/url/raw-file/default/Overview.html">URL API</a></dt>
           <dd>An API to work with the components of a URI in ECMAscript - host,
             scheme, port, etc. </dd>
-          <dt>Web Components</dt>
+
+          <dt id="webcomponents">Web Components</dt>
           <dd>Specifications that define mechanisms for adding custom 
             elements to a document which allows them to have well-defined behaviour 
-            and rendering. The specifications include:
-	    <a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/custom/index.html">Custom Elements</a>,
-	    <a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/imports/index.html">HTML Imports</a>,
-	    <a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html">HTML Templates</a>,
-	    <a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html">Shadow DOM</a> and
-	    <a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html">Web Components Introduction</a>. Note that some of these specifications may be moved to the HTML Working Group.
-            </dd>
+            and rendering. <em>Note that some of these specifications may be moved to 
+	    the HTML Working Group.</em>
+	    <dl>
+	      <dt><a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/custom/index.html">Custom Elements</a></dt>
+	      <dd>Defines methods for enabling the author to define and use new 
+		types of DOM elements in a document.</dd>
+	      <dt><a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/imports/index.html">HTML Imports</a></dt>
+	      <dd>Defines a way to include and reuse HTML documents in another 
+		HTML documents.</dd>
+	      <dt><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html">HTML Templates</a></dt>
+	      <dd>Describes a method for declaring inert DOM subtrees in HTML and 
+		manipulating them to instantiate document fragments with identical contents.</dd>
+	      <dt><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html">Shadow DOM</a></dt>
+	      <dd>Describes a method of establishing and maintaining functional 
+		boundaries between DOM trees and how these trees interact with 
+		each other within a document, thus enabling better functional 
+		encapsulation within the DOM.</dd>
+	      <dt><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html">Web Components Introduction</a></dt>
+	      <dd>A non-normative reference, which provides an overview of Web Components.</dd>
+            </dl>
+          </dd>
+
           <dt id="webidl"><a href="http://www.w3.org/TR/WebIDL/">Web Interface
               Definition Language (Web IDL)</a></dt>
           <dd>Language bindings and types for Web interface descriptions.</dd>
