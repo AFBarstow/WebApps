@@ -219,7 +219,7 @@
 		DOM Events Level 3.</dd>
             </dl>
           </dd>
-          <dt>File interaction APIs</dt>
+          <dt id="file-apis">File interaction APIs</dt>
           <dd>APIs for interacting with file systems:
             <dl>
               <dt id="file-api"><a title="File API" href="http://dev.w3.org/2006/webapi/FileAPI/">File
@@ -231,36 +231,38 @@
                   API: Directories and System</a></dt>
               <dd>An API that allows web applications to interact with a file
                 tree located on the client.</dd>
-              <dt><a href="http://dev.w3.org/2009/dap/file-system/file-writer.html">File
+              <dt id="file-writer"><a href="http://dev.w3.org/2009/dap/file-system/file-writer.html">File
                   API: Writer</a></dt>
               <dd>An API that enables web applications to write a file to the
                 client.</dd>
-              <dt><a href="http://w3c.github.io/filesystem-api/Overview.html">FileSystem
+              <dt id="file-system-2"><a href="http://w3c.github.io/filesystem-api/Overview.html">FileSystem
                   API</a></dt>
               <dd>A local sandboxed file system API exposed only to Web Applications.</dd>
             </dl>
           </dd>
-          <dt><a href="http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html">Fullscreen
+          <dt id="fullscreen"><a href="http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html">Fullscreen
               API</a></dt>
           <dd>An API allowing elements to request the full screen for display.
             (API only, excluding sections "Selectors" and "Rendering" of the
             document which will continue to be developed by the CSS WG either as
-            separate specifications or as a joint deliverable)</dd>
-          <dt><a href="http://dvcs.w3.org/hg/gamepad/raw-file/tip/gamepad.html">Gamepad</a></dt>
+            separate specifications or as a joint deliverable).</dd>
+          <dt id="gamepad"><a href="http://dvcs.w3.org/hg/gamepad/raw-file/tip/gamepad.html">Gamepad</a></dt>
           <dd>Defines APIs that allow web applications to directly act on gamepad data.</dd>
+          <dt id="editing"><a href="https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html">HTML Editing APIs</a></dt>
+          <dd>An API to edit HTML documents programmatically.</dd>
           <dt><a href="http://dvcs.w3.org/hg/ime-api/raw-file/292fbe13bacc/Overview.html">Input
               Method (IME) API</a></dt>
           <dd>An API to determine the input method being used, to improve the
             internationalisation of applications working with keyboard and text
             entry. </dd>
-          <dt><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
+          <dt id="manifest"><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
           <dd>Defines a JSON-based manifest, which provides developers with a 
 	    centralized place to put metadata about a web application.</dd>
-          <dt><a href="http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html">Pointer Lock</a></dt>
+          <dt id="pointer-lock"><a href="http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html">Pointer Lock</a></dt>
           <dd>Defines APIs that provide scripted access to raw mouse movement data 
 	    while locking the target of mouse events to a single element and removing 
 	    the cursor from view.</dd>
-          <dt><a href="https://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html">Screen Orientation API</a></dt>
+          <dt id="screen-orientation"><a href="https://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html">Screen Orientation API</a></dt>
           <dd>A view orientation and locking API e.g. to enable reading the
             view's orientation state, locking view orientation, notification of
             view orientation state changes, etc. </dd>
@@ -274,11 +276,13 @@
                <dd>An API for opening an HTTP connection for receiving push notifications from a server in the form of DOM events.</dd>
              </dl>
 	   </dd>
-           <dt><a href="https://dvcs.w3.org/hg/streams-api/raw-file/tip/Overview.htm">Streams API</a></dt>
-           <dd>An API for representing a stream of data in web applications.</dd>
-          <dt><a href="http://dvcs.w3.org/hg/url/raw-file/default/Overview.html">URL API</a></dt>
-          <dd>An API to work with the components of a URI in ECMAscript - host,
-            scheme, port, etc. </dd>
+          <dt id="streams-api"><a href="https://dvcs.w3.org/hg/streams-api/raw-file/tip/Overview.htm">Streams API</a></dt>
+          <dd>An API for representing a stream of data in web applications.</dd>
+          <dt id="url-api"><a href="http://dvcs.w3.org/hg/url/raw-file/default/Overview.html">URL API</a></dt>
+          <dd>This specification defines the syntax, process and error handling for resolving URL, 
+              a sequence of characters from the Universal Character Set, along with guidelines 
+              and security considerations for the use of URL on the Web. It also defines an API 
+              to work with the components of a URL.</dd>
 
           <dt id="webcomponents">Web Components</dt>
           <dd>Specifications that define mechanisms for adding custom 
@@ -294,7 +298,9 @@
 		HTML documents.</dd>
 	      <dt><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html">HTML Templates</a></dt>
 	      <dd>Describes a method for declaring inert DOM subtrees in HTML and 
-		manipulating them to instantiate document fragments with identical contents.</dd>
+		manipulating them to instantiate document fragments with identical contents.
+	        <em>This specification is now part of HTML (and no longer an active
+		deliverable of WebApps WG).</em></dd>
 	      <dt><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html">Shadow DOM</a></dt>
 	      <dd>Describes a method of establishing and maintaining functional 
 		boundaries between DOM trees and how these trees interact with 
@@ -368,7 +374,7 @@
 	     <a href="http://www.w3.org/TR/widgets-digsig/">XML Digital Signatures for Widgets</a></li>
         </ul>
 
-        <h4>3.1.2 Abandoned work</h4>
+        <h4 id="abandoned-work">3.1.2 Abandoned work</h4>
         <p>Some deliverables from the previous charter will no longer be worked on
           as documented in the group's 
 	  <a href="http://www.w3.org/2008/webapps/wiki/PubStatus#Specs_NO_Longer_Active">non-active specs</a> wiki.</p>
@@ -399,7 +405,7 @@
         <p>For all new deliverables, the WebApps WG should develop an associated
           requirements section or document that identifies demonstrable use
           cases.</p>
-        <h3>Other Deliverables</h3>
+        <h3 id="other-deliverables">Other Deliverables</h3>
         <p>Other non-normative documents may be created such as:</p>
         <div id="ig-other-deliverables">
           <ul>
@@ -457,7 +463,7 @@
           particular Web Applications Working Group specifications.
           Where possible, additional dependencies will be
           avoided to prevent the disruption of dependent deliverables. </p>
-        <h3>Liaisons</h3>
+        <h3 id="liaisons">Liaisons</h3>
         <p>The Web Applications Working Group expects to maintain contacts with
           at least the following groups and Activities within W3C (in
           alphabetical order): </p>
@@ -468,7 +474,8 @@
 	    WebApps WG.</dd>
           <dt><a href="http://www.w3.org/Style/Group/" id="css">Cascading Style
               Sheets Working Group</a></dt>
-          <dd>To collaborate on the Fullscreen API specification.</dd>
+          <dd>To collaborate on the Fullscreen API specification and CSS related
+	    aspects of specifications (such as Shadow DOM).</dd>
           <dt><a href="http://www.w3.org/2009/dap/" id="dap">Device APIs Working
               Group</a></dt>
           <dd>To coordinate regarding APIs for devices services.</dd>
@@ -511,7 +518,8 @@
 	    specifications including the File APIs and ServiceWorkers.</dd>
           <dt><a href="http://www.w3.org/2001/tag/">Technical Architecture Group</a></dt>
           <dd>The WebApps WG will ask the Technical Architecture Group to
-            review some set of its specifications.</dd>
+            review some set of its specifications and will help, through a 
+	    joint task force, the development of the URL specification.</dd>
           <dt><a href="http://www.w3.org/WAI/UA/" id="uawg">User Agent
               Accessibility Guidelines Working Group</a></dt>
           <dd>To ensure that WebApps WG deliverables support accessibility
@@ -549,7 +557,7 @@
           </ul>
         </div>
         <div>
-          <h3>External Groups</h3>
+          <h3 id="external-groups">External Groups</h3>
           <p>The following is a tentative list of external bodies the Working
             Group should collaborate with: </p>
           <dl>
@@ -681,7 +689,7 @@
           the provisions of any charter and the W3C Process, the W3C Process
           shall take precedence. </p>
       </div>
-      <h3>Changes from the <a title="Web Applications Working Group Charter" href="http://www.w3.org/2012/webapps/charter/Overview.html">previous
+      <h3 id="charter-changes">Changes from the <a title="Web Applications Working Group Charter" href="http://www.w3.org/2012/webapps/charter/Overview.html">previous
           Web Applications Working Group Charter</a></h3>
       <p><em>This section is informative</em> </p>
       <p>The following is a brief summary of the important changes to the
@@ -731,7 +739,7 @@
         <a href="http://www.ercim.org/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
         <a href="http://www.keio.ac.jp/">Keio</a>,
 	<a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved.</p>
-      <p>Date: 2014-Feb-28</p>
+      <p>Date: 2014-Mar-25</p>
     </div>
   </body>
 </html>
